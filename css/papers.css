@@ -1,0 +1,98 @@
+#readings{
+    width: 100%;
+    background-color: rgb(248, 241, 241);
+}
+
+/* Styling for the paper section */
+.caption{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 10px;
+    /* font-weight: 100; */
+    letter-spacing: 0.1em;
+
+}
+
+.reading-container{
+    text-align: center;
+    font-family: 'Caudex', serif;
+    padding: 40px;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+        "header header header"
+        "item1 item2 item3"
+        "item4 item4 item4"
+}
+
+.header{
+    grid-area: header;
+    max-height: 100px;
+}
+
+.item{
+    font-size: 20px;
+}
+
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item a img{
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item a img:hover{
+    opacity: 0.5;
+    transition-duration: .75s;
+}
+
+span{
+    padding-top: 10px;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+/* 
+.reading-container{
+    text-align: center;
+    font-family: 'Caudex', serif;
+    padding: 40px;
+    max-width: 860px;
+    height: inherit;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+        "header header header header"
+        "item1 item1 item2 item2"
+} */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/landing-page.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/papers.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/global.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Xue</title>
+</head>
+<body>
+    <header>
+        <div id="picture-container">
+            <img src="images/highway1.jpg" alt="highway">
+        </div>
+        <div class="landing-text" id="title">
+            <img src="images/Asset 7.svg" alt="title">
+        </div>
+        <div class="icons">
+            <ul>
+                <li>
+                    <a href="https://github.com/iamalanxue" target="_blank" ><i class="fab fa-github-square"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alanxue20/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="far fa-file-pdf"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="introduction" data-aos="fade" data-aos-duration="1500" data-aos-once="true" data-aos-easing="ease-in-out">
+        <div class="container">
+            <div class="intro">
+                <p>An Average Student who enjoys learning about AI. </p>
+            </div>
+            <div class="topics">
+                <p>
+                    Interesting Topics // Deep Learning, Data Augmentation, Feature Engineering
+                </p>
+            </div>
+            <div class="topics interests">
+                <p>
+                    (He also enjoys traveling and shooting photos too.) 
+                </p>
+            </div>
+            <div class="topics camera-container">
+                <img src="images/camera-icon.png" alt="camera-icon">
+            </div>
+        </div>
+    </section>
+    <section id="readings" data-aos="fade" data-aos-duration="1500" data-aos-once="true" data-aos-easing="ease-in-out">
+        <div class="reading-container">
+            <div class="item header">
+                <div class="intro">
+                    <p>
+                        The Features 
+                    </p>
+                </div>
+                <div class="caption">
+                    <p>
+                        (Some good reads/news about AI)
+                    </p>
+                </div>
+            </div>
+            <div class="item item1">
+                <a href="https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf" target="_blank">
+                    <img src="images/cnn-visual.jpeg" alt="CNN-Layers">
+                </a>
+                <a href="https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf" target="_blank">
+                    <span>AlexNet Classification</span>
+                </a>
+            </div>
+            <div class="item item2">
+                <a href="https://arxiv.org/abs/1704.04861" target="_blank">
+                    <img src="images/object-detection.jpeg" alt="object-detection">
+            </a>
+            <a href="https://arxiv.org/abs/1704.04861" target="_blank">
+                <span>
+                    MobileNet Object Detection
+                </span>
+            </a>
+            </div>
+            <div class="item item3">
+                <a href="https://arxiv.org/abs/1409.1556" target="_blank">
+                <img src="images/vgg16.png" alt="VGG16"></a>
+                <a href="https://arxiv.org/abs/1409.1556" target="_blank"><span>VGG16 for Classification and Detection</span></a>
+            </div>
+            <div class="item item4">
+                <a href="https://openai.com/blog/dall-e/" target="_blank">
+                    <img src="images/penguin.jpeg" alt="DALL-E example">
+                </a>
+                <a href="https://openai.com/blog/dall-e/" target="_blank"><span>DALL-E Image Generation from Text</span></a>
+            </div>
+        </div>
+    </section>
+    <section id="about-me" data-aos="fade" data-aos-duration="1500" data-aos-once="true" data-aos-easing="ease-in-out">
+        <div class="about-me-container">
+            <div class="intro">
+            <p>Hello.</p>
+        </div>
+        <div class="container">
+            <div class="border">
+               <div class="me">
+                <img src="images/me.jpg" alt="ME">
+                <p>Photo © David Tseung</p>
+            </div> 
+            </div>
+            
+            <div class="bio">
+                <p>
+                    I grew up in Chicago, and am attending Northwestern University's School of Engineering. 
+                    
+                    I discovered my passion for AI over the summer and have been hooked towards learning more about this field ever since. My goal is to hopefully become a grandmaster one day on Kaggle. This goal is currently too ambitious but I hope to achieve this milestone one day. 
+                    <br>
+                    <br>
+                    If you cannot contact me it is probably because I'm watching videos about AI 😊. 
+                    <!-- and I would love to connect with you so we can learn more about AI together.  -->
+                </p>
+            </div>
+        </div>
+        </div>
+    </section> 
+     <div id="cameraModal" class="modal">
+         <div class="modal-guts">
+            <span class="close">&times;</span>
+        <div class="item header">
+            <div class="intro">
+                <p>
+                    Photos
+                </p>
+            </div>
+            <div class="caption">
+                <p>
+                    (Places I've Traveled)
+                </p>
+            </div>
+        </div>
+        <div id="gallery-container">
+        </div> 
+         </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+  
+    <script src="javascript/imagegrid.js"></script>
+    <script src="javascript/calc.js"></script>
+    <script src="https://kit.fontawesome.com/6f7b58107b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+</html>

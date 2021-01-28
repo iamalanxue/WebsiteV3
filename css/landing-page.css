@@ -1,0 +1,117 @@
+#picture-container img{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#picture-container{
+    display: grid;
+    height: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* This part here is for styling the svg file  */
+.landing-text{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 450px;
+    transform: translateY(-50%);
+    right: 10%;
+}
+
+.landing-text img{
+    object-fit: contain;
+    height: auto;
+    animation: opaque 1.5s linear forwards;
+}
+
+@keyframes opaque{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* This part here is for styling the icons */
+ul{
+    list-style-type: none;
+    animation: opaque 1.5s linear forwards;
+}
+.icons{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons li{
+    margin-bottom: 25px;
+}
+.fab, .far{
+    font-size: 2rem;
+    color:white;
+    /* color: #77C8D6; */
+}
+
+.fab:hover, .fas:hover{
+       /* Better color to choose */
+    animation: icons .25s ease-in forwards;
+}
+
+@keyframes icons{
+    from{
+        color: white;
+    }
+    to{
+        color:rgb(99, 145, 212);
+    }
+}
+
+/* This is the styling for the intro */
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital@1&display=swap');
+
+.container{
+    font-family: 'Caudex', serif;
+    padding: 40px;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro{
+    font-size: 56px;
+    color: #000000;
+    letter-spacing: 0.1em;
+    text-align: center; 
+}
+.topics{
+    width: 600px;
+    padding-top: 35px;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 0.15em;
+    text-align: center; 
+}
+
+.interests{
+    font-style: italic;
+    width: 300px;
+    font-size: 20px;
+}
+
+.camera-container img{
+    width: 220px;
+    height: auto;
+}
+
