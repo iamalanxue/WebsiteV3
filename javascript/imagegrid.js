@@ -9,8 +9,8 @@ const loadCards = (photos, column_num) => {
 };
 
 loadCards([
-    'images/pic1.JPG',
-    'images/pic2(resized).JPG',
+    'images/pic5.JPG',
+    'images/pic8.JPG',
 ], 0);
 
 loadCards([
@@ -24,7 +24,20 @@ loadCards([
 ], 2)
 
 
-all_images = document.querySelectorAll(".column img");
+captions = ["An outdoor history Museum in China", "Buddhist Temple in Guangdong", "A backyard", "A salon during busy hours", "Beautiful Red Autumn Leaves", "Surroundings of a town"]
+
+const con = function(src){
+
+    if(src.includes('images/pic5.JPG')) return 0
+    else if(src.includes('images/pic8.JPG')) return 3
+    else if(src.includes('images/pic11.jpeg')) return 1
+    else if(src.includes('images/pic12.jpeg')) return 4
+    else if(src.includes('images/pic6.JPG')) return 2
+    else if(src.includes('images/pic7.JPG')) return 5
+}
+
+const all_images = document.querySelectorAll(".column img");
+const caption = document.getElementById("caption"); 
 console.log(all_images);
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
@@ -36,6 +49,9 @@ const MODAL = function(images){
         image.onclick = function(){
             modal.style.display = "block";
             modalImg.src = this.src;
+            let number = con(modalImg.src); 
+            console.log(number); 
+            caption.innerHTML = captions[number];
         }
     }
 }

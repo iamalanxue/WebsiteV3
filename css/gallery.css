@@ -134,7 +134,9 @@
   font-weight: bold;
   transition: 0.3s;
 }
-
+#close2{
+  color: black;
+}
 .close:hover,
 .close:focus {
   color: #bbb;

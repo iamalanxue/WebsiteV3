@@ -1,8 +1,11 @@
 #readings{
     width: 100%;
-    background-color: rgb(248, 241, 241);
+    background-color: #f8efc9;
 }
 
+#introduction{
+    background-color: #bddddf;
+}
 /* Styling for the paper section */
 .caption{
     text-align: center;
