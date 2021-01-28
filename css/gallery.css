@@ -56,8 +56,24 @@
   height: 100%; /* Full height */
   overflow: hidden; /* Do not enable scroll */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  direction: rtl;
 }
 
+
+.modal2{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* padding-top: 75px; Location of the box */
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  max-width: 980px;
+  transform: translateX(-50%);
+  animation-name: opaque;
+  animation-duration: 1s;
+}
 
 /* Modal Content (image) */
 .modal-content {
@@ -84,6 +100,7 @@
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 .modal-guts{
   background-color: white;
   position: absolute;
@@ -91,14 +108,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-
-  /* spacing as needed */
-  padding: 20px 50px 20px 20px;
-
+  /* max-width: 980px; */
+  margin: auto;
+  padding: 5px;
+  /* padding: 20px 50px 20px 20px; */
   /* let it scroll */
   overflow: auto;
 }
-
+@keyframes opaque{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
 @keyframes zoom {
   from {transform: scale(0.1)} 
   to {transform: scale(1)}

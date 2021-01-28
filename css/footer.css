@@ -1,0 +1,29 @@
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.footer-container{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-icons{
+    display: inline;
+}
+
+#ul_bottom li {
+    display: inline;
+    padding-left: 20px;
+}
+
+#ul_bottom i{
+    font-size: 22px;
+}

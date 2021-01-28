@@ -11,25 +11,16 @@ const loadCards = (photos, column_num) => {
 loadCards([
     'images/pic1.JPG',
     'images/pic2(resized).JPG',
-    'images/pic3.JPG',
-    'images/pic4.JPG',
-    'images/pic5.JPG',
 ], 0);
 
 loadCards([
     'images/pic11.jpeg',
     'images/pic12.jpeg',
-    'images/pic13.jpeg',
-    'images/pic14.jpeg',
-    'images/pic15.jpeg',
 ], 1)
 
 loadCards([
     'images/pic6.JPG',
     'images/pic7.JPG',
-    'images/pic8.JPG',
-    'images/pic9.JPG',
-    'images/pic10.JPG',
 ], 2)
 
 
